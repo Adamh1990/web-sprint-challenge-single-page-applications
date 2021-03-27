@@ -1,11 +1,17 @@
 import React from "react";
+import Header from './components/Header'
+import ReactDOM from 'react-dom';
+import { Router, Route } from 'react-router';
+import Home from './components/Home';
+import Help from './components/Help';
 
 const App = () => {
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
+    <div className ='container'>
+      <Header />
+    </div>
   );
 };
+
+
 export default App;
