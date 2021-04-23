@@ -16,7 +16,7 @@ const Header = () => {
                     <Route path='/home'>
                         <Button className='home' color='green' text='Home' />;
                     </Route>
-                    <Route exact path='./Help'>
+                    <Route exact from='/' to="/Help">
                         <Button className='help' color='red' text='Help' />
                     </Route>
                 </Switch>    
