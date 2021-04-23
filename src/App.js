@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch, BrowserRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import axios from 'axios';
 
@@ -138,7 +138,7 @@ function App() {
           <img src={logo} alt='logo' /> 
           <div className="nav-links">
             <Link className='link' to='/'>Home</Link>
-            <Link className='secondLink' to='/pizza'>Pizza</Link>
+              <Link className='secondLink' to='/pizza'>Pizza</Link>
           </div>  
         </nav>
         <Switch>
@@ -150,6 +150,7 @@ function App() {
             disabled={disabled} 
             />
           </Route>
+
           <Route exact path='/'>
             <Home />
           </Route>
